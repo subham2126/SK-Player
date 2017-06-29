@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/wooda"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.skplayer.MainActivity" >
+
+    
+    
+    
+    
+    <LinearLayout 
+        android:id="@+id/player_footer_bg"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:background="@layout/bg_player_footer"
+        android:gravity="center">
+        
+         <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@layout/rounded_corner"
+            android:paddingLeft="10dp"
+            
+            android:paddingRight="10dp">
+            
+             <ImageButton
+                android:id="@+id/btnPrevious" 
+                android:src="@drawable/btn_previous"
+               android:layout_width="50dp"
+                 android:layout_height="50dp"
+         
+                android:background="@null"/>
+
+             <ImageButton
+                 android:id="@+id/ibbbb"
+               android:layout_width="50dp"
+                 android:layout_height="50dp"
+                 android:background="@null"
+               
+                 android:src="@drawable/btn_backward" />
+
+             <ImageButton
+                 android:id="@+id/i1"
+                 android:layout_width="70dp"
+                 android:layout_height="70dp"
+                 android:background="@null"
+                 android:src="@drawable/img_btn_play" />
+
+    <ImageButton 
+                android:id="@+id/ifff"
+                android:src="@drawable/btn_forward"
+                android:layout_width="50dp"
+                 android:layout_height="50dp"
+                android:background="@null"/>
+    
+    <ImageButton 
+                android:id="@+id/next"
+                android:src="@drawable/btn_next"
+                android:layout_width="50dp"
+                 android:layout_height="50dp"
+                android:background="@null"/>
+        </LinearLayout>
+    </LinearLayout>
+
+   
+   
+
+    
+    <SeekBar
+        	android:id="@+id/sk1"
+	         android:layout_width="fill_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginRight="20dp" 
+	         android:layout_marginLeft="20dp"
+	         android:layout_marginBottom="20dp"
+	         android:background="@null"
+	    	 android:layout_above="@id/player_footer_bg"
+	    	 android:thumb="@drawable/seek_handler"
+	    	 android:progressDrawable="@drawable/seekbar_progress"
+	    	 android:paddingLeft="6dp"
+	    	 android:paddingRight="6dp"/>
+
+     <Button
+         android:id="@+id/Playlist"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignParentTop="true"
+         android:layout_alignRight="@+id/player_footer_bg"
+         android:layout_marginTop="23dp"
+         android:background="@drawable/playlist"
+         android:text=""
+         android:textColor="#000000" />
+
+     <ImageButton
+         android:id="@+id/repeat"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_alignParentRight="true"
+         android:layout_below="@+id/Playlist"
+         android:background="@null"
+         android:src="@drawable/btn_repeat" />
+
+     <TextView
+         android:id="@+id/textView1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/sk1"
+         android:layout_alignParentTop="true"
+         android:layout_marginLeft="17dp"
+         android:layout_marginTop="15dp"
+         android:text="WELCOME TO SKPlAYER"
+         android:textColor="#00ff00"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <TextView
+         android:id="@+id/te1"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_alignBottom="@+id/Playlist"
+         android:layout_alignLeft="@+id/sk1"
+         android:text=""
+         android:textColor="#ffff00"
+         android:textAppearance="?android:attr/textAppearanceMedium" />
+
+     <TextView
+         android:id="@+id/durationbar"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_above="@+id/sk1"
+         android:layout_centerHorizontal="true"
+         android:text="/"
+         android:textStyle="bold"
+         android:textAppearance="?android:attr/textAppearanceMedium"
+         android:textColor="#ffffff" />
+
+     <ImageButton
+         android:id="@+id/shuffle"
+         android:layout_width="60dp"
+         android:layout_height="60dp"
+         android:layout_alignLeft="@+id/repeat"
+         android:layout_below="@+id/repeat"
+         android:src="@drawable/btn_shuffle" />
+     
+</RelativeLayout>
